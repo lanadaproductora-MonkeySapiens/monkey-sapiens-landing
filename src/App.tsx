@@ -1,30 +1,31 @@
 import { useState } from 'react';
 import Header from './components/Header';
-import Hero from './components/Hero';
+import HeroConversion from './components/HeroConversion';
+import ValueProposition from './components/ValueProposition';
 import Services from './components/Services';
-import Pillars from './components/Pillars';
+import Proof from './components/Proof';
 import Pricing from './components/Pricing';
-import CTA from './components/CTA';
+import Objections from './components/Objections';
+import FinalCTA from './components/FinalCTA';
 import Footer from './components/Footer';
 import ContactModal from './components/ContactModal';
+import './index.css';
 
-function App() {
+export default function App() {
   const [showContactModal, setShowContactModal] = useState(false);
 
   return (
     <div className="min-h-screen bg-white">
       <Header onContactClick={() => setShowContactModal(true)} />
-      <Hero onCTAClick={() => setShowContactModal(true)} />
+      <HeroConversion onCTAClick={() => setShowContactModal(true)} />
+      <ValueProposition />
       <Services />
-      <Pillars />
+      <Proof />
       <Pricing onCTAClick={() => setShowContactModal(true)} />
-      <CTA onCTAClick={() => setShowContactModal(true)} />
+      <Objections />
+      <FinalCTA onCTAClick={() => setShowContactModal(true)} />
       <Footer />
-      {showContactModal && (
-        <ContactModal onClose={() => setShowContactModal(false)} />
-      )}
+      {showContactModal && <ContactModal onClose={() => setShowContactModal(false)} />}
     </div>
   );
 }
-
-export default App;
