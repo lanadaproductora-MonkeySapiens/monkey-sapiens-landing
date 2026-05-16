@@ -22,8 +22,8 @@ export default function Pricing({ onCTAClick }: PricingProps) {
             <p className="text-gray-600 mb-6">Para emprendedores</p>
             
             <div className="mb-8">
-              <span className="text-4xl font-bold text-blue-900">$100k</span>
-              <span className="text-gray-600"> - $150k/mes</span>
+              <span className="text-4xl font-bold text-blue-900">$200k</span>
+              <span className="text-gray-600">/mes</span>
             </div>
 
             <ul className="space-y-4 mb-8">
