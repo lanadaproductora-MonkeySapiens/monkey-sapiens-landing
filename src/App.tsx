@@ -1,12 +1,10 @@
 import { useState } from 'react';
 import Header from './components/Header';
-import HeroConversion from './components/HeroConversion';
-import ValueProposition from './components/ValueProposition';
+import HeroWithCharacter from './components/HeroWithCharacter';
 import Services from './components/Services';
-import Proof from './components/Proof';
+import Process from './components/Process';
 import Pricing from './components/Pricing';
-import Objections from './components/Objections';
-import FinalCTA from './components/FinalCTA';
+import CTA from './components/CTA';
 import Footer from './components/Footer';
 import ContactModal from './components/ContactModal';
 import './index.css';
@@ -17,13 +15,11 @@ export default function App() {
   return (
     <div className="min-h-screen bg-white">
       <Header onContactClick={() => setShowContactModal(true)} />
-      <HeroConversion onCTAClick={() => setShowContactModal(true)} />
-      <ValueProposition />
+      <HeroWithCharacter onCTAClick={() => setShowContactModal(true)} />
       <Services />
-      <Proof />
+      <Process />
       <Pricing onCTAClick={() => setShowContactModal(true)} />
-      <Objections />
-      <FinalCTA onCTAClick={() => setShowContactModal(true)} />
+      <CTA onCTAClick={() => setShowContactModal(true)} />
       <Footer />
       {showContactModal && <ContactModal onClose={() => setShowContactModal(false)} />}
     </div>

@@ -10,11 +10,10 @@ export default function CTA({ onCTAClick }: CTAProps) {
     <section className="py-20 px-4 bg-gradient-to-r from-primary to-blue-900">
       <div className="max-w-4xl mx-auto text-center">
         <h2 className="text-5xl md:text-6xl font-bold text-white mb-6">
-          ¡Es hora de evolucionar tu marca!
+          ¿Listo para cautivar y crecer?
         </h2>
         <p className="text-xl text-blue-100 mb-12 leading-relaxed">
-          Únete a la comunidad de emprendedores y pymes que ya están transformando su presencia digital. 
-          Obtén un diagnóstico gratuito y descubre exactamente qué necesita tu marca para brillar.
+          Tu marca tiene potencial. El diagnóstico es gratuito, sin compromiso. Descubre exactamente qué necesitas para brillar.
         </p>
         <div className="flex flex-col sm:flex-row gap-4 justify-center">
           <button
